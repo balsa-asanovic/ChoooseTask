@@ -17,26 +17,53 @@ const Tile = ({ title, subtitle, image, offset, rating }: TileProps) => {
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover', // Adjust how the image covers the background
         backgroundPosition: 'center', // Center the background image
-        backgroundRepeat: 'no-repeat' // Prevent image repetition
-    };
-
-    // Define a style object to set the font color to white
-    const textStyle: React.CSSProperties = {
-        color: 'white'
+        backgroundRepeat: 'no-repeat', // Prevent image repetition
+        minHeight: '200px',
     };
 
     return (
         <Box
-            borderWidth="1px"
-            borderRadius="md"
-            p="4"
+            borderWidth="4px"
+            borderRadius="xl"
+            padding="4px 4px 0px 4px"
             boxShadow="base"
             style={tileStyle}
+            display="flex" // Center content horizontally and vertically
+            flexDirection="column" // Stack content vertically
+            justifyContent="center" // Center content vertically
+            alignItems="center" // Center content horizontally
+            textAlign="center" // Center text content
         >
-            <Heading as="h2" size="md" style={textStyle}>{title}</Heading>
-            <Text style={textStyle}>{subtitle}</Text>
-            <Text style={textStyle}>Emission Offset: {offset} tons</Text>
-            <StarRating rating={rating} maxRating={5} />
+            <Heading 
+                as="h2" 
+                size="md" 
+                color="white"
+                marginTop="30px"
+            >
+                {title}
+            </Heading>
+            <Text 
+                fontSize="8px" 
+                color="white"
+            >
+                {subtitle}
+            </Text>
+            <Box 
+                color="white"
+                rounded="md"
+                fontSize="10px"
+                backgroundColor="gray.600"
+                padding="4px 8px"
+                marginTop="10px"
+            >
+                Emission Offset: {offset} tons
+            </Box>
+            <Box marginTop="auto">
+            <StarRating 
+                rating={rating} 
+                maxRating={5}
+            />
+            </Box>
         </Box>
     )
 };
