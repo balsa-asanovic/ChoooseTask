@@ -18,7 +18,11 @@ const App = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch('http://localhost:3001/tiles');
+				// http://localhost:3001/tiles can also be used, this pulls data from local
+				// json file db.json
+				// I've also put db.json on github pages so I could pull data
+				// from there for the Netlify site at https://soft-sorbet-e97f0d.netlify.app/
+				const response = await fetch('https://balsa-asanovic.github.io/db.json');
 			  	if (!response.ok) {
 					throw new Error('Network response was not ok');
 			  	}
