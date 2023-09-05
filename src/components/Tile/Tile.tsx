@@ -1,7 +1,7 @@
 // src/components/Tile.tsx
 import React from 'react';
 import { Box, Heading, Text } from '@chakra-ui/react';
-import StarRating from './StarRating';
+import StarRating from '../StarRating/StarRating';
 
 interface TileProps {
     title: string;
@@ -56,7 +56,7 @@ const Tile = ({ title, subtitle, image, offset, rating }: TileProps) => {
                 padding="8px"
                 marginTop="10px"
             >
-                <span style={{marginRight: "30px"}}>Emission Offset:</span> {offset} tons
+                <span style={{marginRight: "30px"}}>Emission Offset:</span> {offset}
             </Box>
             <Box marginTop="auto">
             <StarRating 

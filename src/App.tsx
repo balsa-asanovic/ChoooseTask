@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Tile from './components/Tile';
+import Tile from './components/Tile/Tile';
 import { Box } from '@chakra-ui/react';
 
 interface TileData {
@@ -24,7 +24,6 @@ const App = () => {
 			  	}
 			  	const jsonData = await response.json();
 			  	setData(jsonData);
-				console.log(jsonData);
 			} catch (error) {
 			  	console.error('Error fetching data:', error);
 			}
