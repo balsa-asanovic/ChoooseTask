@@ -53,10 +53,10 @@ const Tile = ({ title, subtitle, image, offset, rating }: TileProps) => {
                 rounded="md"
                 fontSize="10px"
                 backgroundColor="gray.600"
-                padding="4px 8px"
+                padding="8px"
                 marginTop="10px"
             >
-                Emission Offset: {offset} tons
+                <span style={{marginRight: "30px"}}>Emission Offset:</span> {offset} tons
             </Box>
             <Box marginTop="auto">
             <StarRating 
