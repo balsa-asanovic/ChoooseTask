@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Tile from './components/Tile';
+import { Box } from '@chakra-ui/react';
 
 interface TileData {
 	id: number;
@@ -35,18 +36,22 @@ const App = () => {
 	return (
 		<div className="App">
 			<div className="tile-container">
-				{
-					data.map((tileData, index) => {
-						return <Tile 
-									key={index} 
-									title={tileData.title}
-									subtitle={tileData.subtitle}
-									image={tileData.image}
-									offset={tileData.offset}
-									rating={tileData.rating}
-								/>
-					})
-				}
+				<Box
+					display="grid"
+					gridTemplateColumns="repeat(auto-fill, minmax(200px, 1fr))" // Automatically adapt columns based on available width
+          			gridGap="16px"
+				>
+					{data.map((tileData, index) =>
+						<Tile 
+							key={index} 
+							title={tileData.title}
+							subtitle={tileData.subtitle}
+							image={tileData.image}
+							offset={tileData.offset}
+							rating={tileData.rating}
+						/>
+				)}
+				</Box>
 			</div>
 		</div>
 	);

@@ -4,7 +4,7 @@
         "id": 1,
         "title": "European Quest",
         "subtitle": "8 Countries, 21 Days",
-        "image": "image1.jpg",
+        "image": "https://picsum.photos/id/11/500",
         "offset": "810kgCOe",
         "rating": 4.7
       },
