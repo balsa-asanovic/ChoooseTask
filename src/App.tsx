@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import Tile from './components/Tile';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface TileData {
+	id: number;
+	title: string;
+	subtitle: string;
+	image: string;
+	offset: number;
+	rating: number;
+  }
+
+const App = () => {
+	const [data, setData] = useState<TileData[]>([]);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const response = await fetch('http://localhost:3001/tiles');
+			  	if (!response.ok) {
+					throw new Error('Network response was not ok');
+			  	}
+			  	const jsonData = await response.json();
+			  	setData(jsonData);
+				console.log(jsonData);
+			} catch (error) {
+			  	console.error('Error fetching data:', error);
+			}
+		  }
+	  
+		fetchData();
+	}, []);
+
+	return (
+		<div className="App">
+			<div className="tile-container">
+				{
+					data.map((tileData, index) => {
+						return <Tile 
+									key={index} 
+									title={tileData.title}
+									subtitle={tileData.subtitle}
+									image={tileData.image}
+									offset={tileData.offset}
+									rating={tileData.rating}
+								/>
+					})
+				}
+			</div>
+		</div>
+	);
 }
 
 export default App;
