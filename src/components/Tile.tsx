@@ -1,6 +1,7 @@
 // src/components/Tile.tsx
 import React from 'react';
 import { Box, Heading, Text } from '@chakra-ui/react';
+import StarRating from './StarRating';
 
 interface TileProps {
     title: string;
@@ -35,7 +36,7 @@ const Tile = ({ title, subtitle, image, offset, rating }: TileProps) => {
             <Heading as="h2" size="md" style={textStyle}>{title}</Heading>
             <Text style={textStyle}>{subtitle}</Text>
             <Text style={textStyle}>Emission Offset: {offset} tons</Text>
-            <Text style={textStyle}>Star Rating: {rating}</Text>
+            <StarRating rating={rating} maxRating={5} />
         </Box>
     )
 };
