@@ -4,7 +4,7 @@
         "id": 1,
         "title": "European Quest",
         "subtitle": "8 Countries, 21 Days",
-        "image": "https://picsum.photos/id/11/500",
+        "image": "https://picsum.photos/id/76/600",
         "offset": "810kgCOe",
         "rating": 4.7
       },
@@ -12,73 +12,113 @@
         "id": 2,
         "title": "Autumn Roadtrip",
         "subtitle": "1 Country, 14 Days",
-        "image": "image2.jpg",
+        "image": "https://picsum.photos/id/66/600",
         "offset": "3.56tCOe",
         "rating": 4.5
       },
       {
-        "id": 1,
+        "id": 3,
+        "title": "Diving adventure in Egypt",
+        "subtitle": "1 Country, 5 Days",
+        "image": "https://picsum.photos/id/141/600",
+        "offset": "6.92tCOe",
+        "rating": 4.9
+      },
+      {
+        "id": 4,
         "title": "European Quest",
         "subtitle": "8 Countries, 21 Days",
-        "image": "image1.jpg",
+        "image": "https://picsum.photos/id/76/600",
         "offset": "810kgCOe",
         "rating": 4.7
       },
       {
-        "id": 2,
+        "id": 5,
         "title": "Autumn Roadtrip",
         "subtitle": "1 Country, 14 Days",
-        "image": "image2.jpg",
+        "image": "https://picsum.photos/id/66/600",
         "offset": "3.56tCOe",
         "rating": 4.5
       },
       {
-        "id": 1,
+        "id": 6,
+        "title": "Diving adventure in Egypt",
+        "subtitle": "1 Country, 5 Days",
+        "image": "https://picsum.photos/id/141/600",
+        "offset": "6.92tCOe",
+        "rating": 4.9
+      },
+      {
+        "id": 7,
         "title": "European Quest",
         "subtitle": "8 Countries, 21 Days",
-        "image": "image1.jpg",
+        "image": "https://picsum.photos/id/76/600",
         "offset": "810kgCOe",
         "rating": 4.7
       },
       {
-        "id": 2,
+        "id": 8,
         "title": "Autumn Roadtrip",
         "subtitle": "1 Country, 14 Days",
-        "image": "image2.jpg",
+        "image": "https://picsum.photos/id/66/600",
         "offset": "3.56tCOe",
         "rating": 4.5
       },
       {
-        "id": 1,
+        "id": 9,
+        "title": "Diving adventure in Egypt",
+        "subtitle": "1 Country, 5 Days",
+        "image": "https://picsum.photos/id/141/600",
+        "offset": "6.92tCOe",
+        "rating": 4.9
+      },
+      {
+        "id": 10,
         "title": "European Quest",
         "subtitle": "8 Countries, 21 Days",
-        "image": "image1.jpg",
+        "image": "https://picsum.photos/id/76/600",
         "offset": "810kgCOe",
         "rating": 4.7
       },
       {
-        "id": 2,
+        "id": 11,
         "title": "Autumn Roadtrip",
         "subtitle": "1 Country, 14 Days",
-        "image": "image2.jpg",
+        "image": "https://picsum.photos/id/66/600",
         "offset": "3.56tCOe",
         "rating": 4.5
       },
       {
-        "id": 1,
+        "id": 12,
+        "title": "Diving adventure in Egypt",
+        "subtitle": "1 Country, 5 Days",
+        "image": "https://picsum.photos/id/141/600",
+        "offset": "6.92tCOe",
+        "rating": 4.9
+      },
+      {
+        "id": 13,
         "title": "European Quest",
         "subtitle": "8 Countries, 21 Days",
-        "image": "image1.jpg",
+        "image": "https://picsum.photos/id/76/600",
         "offset": "810kgCOe",
         "rating": 4.7
       },
       {
-        "id": 2,
+        "id": 14,
         "title": "Autumn Roadtrip",
         "subtitle": "1 Country, 14 Days",
-        "image": "image2.jpg",
+        "image": "https://picsum.photos/id/66/600",
         "offset": "3.56tCOe",
         "rating": 4.5
+      },
+      {
+        "id": 15,
+        "title": "Diving adventure in Egypt",
+        "subtitle": "1 Country, 5 Days",
+        "image": "https://picsum.photos/id/141/600",
+        "offset": "6.92tCOe",
+        "rating": 4.9
       }
     ]
   }
