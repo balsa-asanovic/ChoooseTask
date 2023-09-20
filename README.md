@@ -1,4 +1,4 @@
-# Chooose Task App
+# React SPA rendering data from JSON file
 
 A small web app displaying tiles with pictures and other information fetched from json file.
 
